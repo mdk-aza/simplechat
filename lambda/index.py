@@ -2,7 +2,7 @@ import json
 import urllib.request
 import urllib.error
 
-API_URL = "https://e243-34-21-13-192.ngrok-free.app/generate"
+API_URL = "https://0154-35-247-40-115.ngrok-free.app/generate"
 
 def lambda_handler(event, context):
     try:
