@@ -30,7 +30,7 @@ def lambda_handler(event, context):
         )
 
         print("Sending request to:", API_URL)
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req, timeout=90) as response:
             response_body = response.read()
             response_json = json.loads(response_body)
 
